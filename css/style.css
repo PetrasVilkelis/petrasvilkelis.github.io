@@ -77,6 +77,11 @@ a:active {
   top: 0%;
 } */
 
+.navbar__burger {
+  color: #ffff;
+  font-size: 1.5rem;
+}
+
 .banner {
   color: #fff;
   background-color: #191a1d;
@@ -141,7 +146,9 @@ a:active {
   background-color: #587ee0;
 }
 
-@media (max-width: 992px) {
+/* FOR DESKTOPS */
+
+@media (max-width: 991px) {
   .banner {
     padding-bottom: 200px;
   }
@@ -153,7 +160,7 @@ a:active {
 
   .banner__content__left {
     padding: 0;
-    max-width: none;
+    max-width: 50%;
     margin-bottom: 2rem;
   }
 
@@ -189,26 +196,61 @@ a:active {
   }
 }
 
-@media (max-width: 768px) {
-  .banner__title {
-    font-size: 2.25rem;
-  }
+/* FOR TABLETS */
 
-  .banner__subtitle {
-    font-size: 1rem;
-  }
-
+@media (max-width: 767px) {
   .banner__btn {
     font-size: 1rem;
     padding: 13px 24px;
   }
 
+  .banner__title {
+    font-size: 2.5rem;
+  }
+
+  .banner__subtitle {
+    font-size: 1.25rem;
+  }
+
   .navbar__content {
     padding: 30px 30px;
   }
+
+  .navbar__header {
+    font-size: 1.25rem;
+  }
+
+  .navbar__burger {
+    display: block;
+  }
+  .navbar__nav {
+    display: none;
+  }
+
+  .banner__content__left {
+    max-width: none;
+  }
 }
 
-@media (max-width: 576px) {
+/* MOBILE QUERY */
+@media (max-width: 577px) {
+  .banner__title {
+    font-size: 1.5rem;
+  }
+
+  .banner__subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* FOR HAMBURGER ONLY */
+@media (min-width: 768px) {
+  .navbar__burger {
+    display: none;
+  }
+  .navbar__nav {
+    display: block;
+  }
 }
 
 /* BREAKPOINTS */
