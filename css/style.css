@@ -5,7 +5,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  transition: font-size 0.25s;
+  transition: ease font-size 0.25s;
 }
 
 body {
