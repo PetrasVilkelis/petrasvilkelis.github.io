@@ -1,3 +1,8 @@
+:root {
+  --dark: #191a1d;
+  --primary: #2eab71;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -39,7 +44,7 @@ a:active {
 }
 
 .navbar {
-  background-color: #191a1d;
+  background-color: var(--dark);
 }
 
 .navbar__content {
@@ -58,6 +63,21 @@ a:active {
   letter-spacing: 0.065em;
 }
 
+.navbar__header:after {
+  width: 100%;
+  max-width: 37px;
+  height: 6px;
+  display: block;
+  content: "";
+  border-radius: 1000px;
+  background: var(--primary);
+  transition: max-width 0.25s;
+}
+
+.navbar__header:hover:after {
+  max-width: 20px;
+}
+
 .navbar__nav__list {
   display: flex;
   list-style: none;
@@ -69,15 +89,13 @@ a:active {
   margin-right: 3rem;
 }
 
-.navbar__nav__list > li > a {
+.navbar__link {
+  transition: color 0.25s;
 }
 
-.navbar__nav__list > li > a:before {
+.navbar__link:hover {
+  color: #fff;
 }
-/* 
-.navbar__nav__list > li > a:hover:after {
-  top: 0%;
-} */
 
 .navbar__burger {
   color: #ffff;
@@ -86,7 +104,7 @@ a:active {
 
 .banner {
   color: #fff;
-  background-color: #191a1d;
+  background-color: var(--dark);
   padding-bottom: 100px;
   background-size: 700px;
   clip-path: polygon(
@@ -111,7 +129,7 @@ a:active {
 }
 
 .banner__img {
-  background-color: #121316;
+  background-color: #021014;
   padding: 50px;
 }
 
@@ -135,17 +153,17 @@ a:active {
 
 .btn {
   display: inline-block;
-  background-color: #4b6cc1;
+  background-color: var(--primary);
   border-radius: 1000px;
   padding: 26px 48px;
   font-weight: 400;
   font-size: 1.75rem;
   color: #fff;
-  transition: background-color 0.15s;
+  transition: filter 0.135s;
 }
 
 .btn:hover {
-  background-color: #587ee0;
+  filter: brightness(1.075);
 }
 
 /* FOR DESKTOPS */
