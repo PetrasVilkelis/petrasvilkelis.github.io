@@ -37,12 +37,6 @@ a:active {
   text-decoration: none;
 }
 
-.container {
-  max-width: 1400px;
-  margin: auto;
-  padding: 0 15px;
-}
-
 .navbar {
   background-color: var(--dark);
 }
@@ -131,11 +125,13 @@ a:active {
 .banner__img {
   background-color: #021014;
   padding: 50px;
+  border-radius: 3px;
 }
 
 .banner__img > img {
   max-width: 300px;
   margin-bottom: -100px;
+  border-radius: 3px;
 }
 
 .banner__title {
@@ -151,7 +147,7 @@ a:active {
   margin-bottom: 2rem;
 }
 
-.btn {
+.banner__btn {
   display: inline-block;
   background-color: var(--primary);
   border-radius: 1000px;
@@ -166,6 +162,94 @@ a:active {
   filter: brightness(1.075);
 }
 
+/* PROJECTS */
+
+.projects {
+  padding: 90px 0 190px 0;
+}
+
+.project {
+  max-width: 1080px;
+  padding: 0 30px;
+  margin: auto;
+}
+
+.project__container {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.project__subtitle {
+  text-transform: uppercase;
+  color: grey;
+  letter-spacing: 2px;
+  margin-bottom: 0.25rem;
+}
+
+.project > hr {
+  border: 2px solid#e9e9e9;
+  margin-bottom: 2rem;
+}
+
+.project__img {
+  background-color: #e9e9e9;
+  padding: 12px;
+  border-radius: 3px;
+  flex-basis: 75%;
+}
+
+.project__img > img {
+  width: 100%;
+  margin-bottom: -100px;
+  border-radius: 3px;
+}
+
+.project__description {
+  margin-left: 2rem;
+}
+
+.project__title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.project__text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.project__list {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: grey;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.project__btn {
+  display: inline-block;
+  background-color: var(--primary);
+  border-radius: 1000px;
+  padding: 16px 32px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #fff;
+  transition: filter 0.135s;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 40px 0 40px 0;
+  text-align: center;
+  background-color: #101114;
+  color: #5e5e5e;
+}
+
 /* FOR DESKTOPS */
 
 @media (max-width: 991px) {
@@ -175,7 +259,6 @@ a:active {
 
   .banner__content {
     padding: 0 30px;
-    flex-direction: column;
   }
 
   .banner__content__left {
@@ -250,6 +333,23 @@ a:active {
   .banner__content__left {
     max-width: none;
   }
+
+  .banner__content {
+    flex-direction: column;
+  }
+
+  .project__text {
+    font-size: 1.25rem;
+  }
+
+  .project__list {
+    font-size: 1rem;
+  }
+
+  .project__btn {
+    padding: 13px 24px;
+    font-size: 1rem;
+  }
 }
 
 /* MOBILE QUERY */
@@ -260,6 +360,22 @@ a:active {
 
   .banner__subtitle {
     font-size: 1rem;
+  }
+
+  .projects {
+    padding: 90px 0 90px 0;
+  }
+
+  .project__img {
+    margin-bottom: calc(100px + 1rem);
+  }
+
+  .project__description {
+    margin-left: 0.75rem;
+  }
+
+  .project__container {
+    flex-direction: column;
   }
 }
 
