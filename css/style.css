@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --dark: #191a1d;
   --primary: #2eab71;
@@ -165,7 +169,7 @@ a:active {
 /* PROJECTS */
 
 .projects {
-  padding: 90px 0 190px 0;
+  padding: 60px 0 160px 0;
 }
 
 .project {
@@ -371,7 +375,15 @@ a:active {
   }
 
   .project__description {
-    margin-left: 0.75rem;
+    margin-left: 0rem;
+  }
+
+  .project__title {
+    font-size: 1.5rem;
+  }
+
+  .project__text {
+    font-size: 1rem;
   }
 
   .project__container {
