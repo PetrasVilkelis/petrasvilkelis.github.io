@@ -4,7 +4,14 @@ html {
 
 :root {
   --dark: #191a1d;
-  --primary: #2eab71;
+  --dark-text: #343a40;
+  --dark-alt: #101114;
+  --primary: #28a745;
+  --info: #007bff;
+  --muted: #6c757d;
+  --muted-alt: #5e5e5e;
+  --light: #f8f9fa;
+  --secondary: #e9e9e9;
 }
 
 * {
@@ -57,7 +64,7 @@ a:active {
   text-transform: uppercase;
   font-size: 1.75rem;
   font-weight: 500;
-  color: #fff;
+  color: var(--light);
   letter-spacing: 0.065em;
 }
 
@@ -92,16 +99,16 @@ a:active {
 }
 
 .navbar__link:hover {
-  color: #fff;
+  color: var(--light);
 }
 
 .navbar__burger {
-  color: #ffff;
+  color: var(--light);
   font-size: 1.5rem;
 }
 
 .banner {
-  color: #fff;
+  color: var(--light);
   background-color: var(--dark);
   padding-bottom: 100px;
   background-size: 700px;
@@ -158,7 +165,7 @@ a:active {
   padding: 26px 48px;
   font-weight: 400;
   font-size: 1.75rem;
-  color: #fff;
+  color: var(--light);
   transition: filter 0.135s;
 }
 
@@ -186,18 +193,18 @@ a:active {
 
 .project__subtitle {
   text-transform: uppercase;
-  color: grey;
+  color: var(--muted);
   letter-spacing: 2px;
   margin-bottom: 0.25rem;
 }
 
 .project > hr {
-  border: 2px solid#e9e9e9;
+  border: 2px solid var(--secondary);
   margin-bottom: 2rem;
 }
 
 .project__img {
-  background-color: #e9e9e9;
+  background-color: var(--secondary);
   padding: 12px;
   border-radius: 3px;
   flex-basis: 75%;
@@ -223,25 +230,41 @@ a:active {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 300;
+  color: var(--dark-text);
 }
 
 .project__list {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
   font-size: 1.25rem;
-  color: grey;
+  color: var(--muted);
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.project__btn {
+.project__btn__wrapper {
+  margin-bottom: 1rem;
+}
+
+.project__btn__preview {
+  display: inline-block;
+  background-color: var(--info);
+  border-radius: 1000px;
+  padding: 16px 32px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--light);
+  transition: filter 0.135s;
+}
+
+.project__btn__source {
   display: inline-block;
   background-color: var(--primary);
   border-radius: 1000px;
   padding: 16px 32px;
   font-weight: 400;
   font-size: 1.25rem;
-  color: #fff;
+  color: var(--light);
   transition: filter 0.135s;
 }
 
@@ -250,8 +273,8 @@ a:active {
 .footer {
   padding: 40px 0 40px 0;
   text-align: center;
-  background-color: #101114;
-  color: #5e5e5e;
+  background-color: var(--dark-alt);
+  color: var(--muted-alt);
 }
 
 /* FOR DESKTOPS */
