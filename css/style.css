@@ -373,7 +373,8 @@ a:active {
     font-size: 1rem;
   }
 
-  .project__btn {
+  .project__btn__preview,
+  .project__btn__source {
     padding: 13px 24px;
     font-size: 1rem;
   }
