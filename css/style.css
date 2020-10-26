@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -73,7 +73,7 @@ a:active {
   max-width: 37px;
   height: 6px;
   display: block;
-  content: "";
+  content: '';
   border-radius: 1000px;
   background: var(--primary);
   transition: max-width 0.25s;
@@ -211,7 +211,7 @@ a:active {
   background-color: var(--secondary);
   padding: 12px;
   border-radius: 3px;
-  flex-basis: 75%;
+  flex-basis: 100%;
 }
 
 .project__img > img {
@@ -221,6 +221,7 @@ a:active {
 }
 
 .project__description {
+  flex-basis: 100%;
   margin-left: 2rem;
 }
 
